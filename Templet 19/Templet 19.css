@@ -1,0 +1,420 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 15px;
+    height: 50px;
+}
+
+.topnav a {
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 9px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav-right {
+    float: right;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    right: 70px;
+}
+
+.topnav-left {
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    left: 70px;
+}
+
+.secondtopnav {
+    overflow: hidden;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 15px;
+}
+
+.secondtopnav-right a {
+    float: right;
+    color: #000000;
+    text-align: center;
+    padding: 15px 9px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.secondtopnav-right {
+    float: right;
+    color: #000000;
+    text-align: center;
+    padding: 15px 12px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    margin: 10px -20px;
+}
+
+.row,
+.row>.column {
+    padding: 8px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    padding: 10px;
+}
+
+.column {
+    position: relative;
+    float: left;
+    width: 25%;
+    padding: 10px;
+    left: 10px;
+}
+
+.row-two {
+    margin: 10px -20px;
+}
+
+.row-two,
+.row-two>.column-two {
+    padding: 20px;
+}
+
+.row-two:after {
+    content: "";
+    display: table;
+    clear: both;
+    padding: 20px;
+}
+
+.column-two {
+    position: relative;
+    float: left;
+    width: 30%;
+    padding: 20px;
+    left: 100px;
+    top: 50px;
+}
+
+.row-three {
+    margin: 10px -20px;
+}
+
+.row-three,
+.row-three>.column-three {
+    padding: 10px;
+}
+
+.row-three:after {
+    content: "";
+    display: table;
+    clear: both;
+    padding: 50px;
+}
+
+.column-three {
+    position: relative;
+    float: left;
+    width: 27%;
+    padding: 50px;
+    left: 175px;
+}
+
+img {
+    margin-bottom: -4px;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.checked {
+    color: orange;
+}
+
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+.car-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("car_data.jpg");
+    height: 50%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.car-image-view {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("CARS.jpg");
+    height: 50%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("car3.jpg");
+    height: 65%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.car-text {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.chip {
+    display: inline-block;
+    padding: 0 25px;
+    height: 100px;
+    width: 400px;
+    font-size: 16px;
+    line-height: 25px;
+    border-radius: 50px;
+    background-color: #ffffff;
+}
+
+.chip img {
+    float: left;
+    margin: 0 15px 0 0px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.bottom-nav {
+    overflow: hidden;
+    background-color: #f1f1f1ee;
+    color: #000000;
+    font-size: 15px;
+    height: fit-content;
+}
+
+.bottom-nav a {
+    float: left;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.bottom-right {
+    float: right;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    right: 70px;
+}
+
+.bottom-left {
+    float: left;
+    color: #000000;
+    text-decoration: none;
+    font-size: 17px;
+    left: 50px;
+}
+
+.secondbottomnav {
+    overflow: hidden;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 15px;
+    height: fit-content;
+}
+
+.secondbottomnav a {
+    float: left;
+    color: #000000;
+    text-align: left;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.secondbottomnav-left {
+    float: left;
+    color: #000000;
+    text-align: left;
+    padding: 15px 12px;
+    text-decoration: none;
+    font-size: 17px;
+    width: 50%;
+    left: 20px;
+}
+
+.secondbottomnav-left-left {
+    float: left;
+    color: #000000;
+    text-align: left;
+    padding: 15px 12px;
+    text-decoration: none;
+    font-size: 17px;
+    width: 60%;
+    padding-left: 40px;
+}
+
+.secondbottomnav-left-right {
+    display: inline-block;
+    padding: 15px 12px;
+    font-size: 17px;
+    line-height: 25px;
+    border-radius: 25px;
+    width: 40%;
+}
+
+.social {
+    display: inline-block;
+    padding: 0 25px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 50px;
+    border-radius: 25px;
+    background-color: #ffffff;
+}
+
+.social .fa {
+    float: left;
+    padding: 17px;
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 10px 0 -25px;
+    border-radius: 50%;
+}
+
+.social:hover {
+    opacity: 0.7;
+}
+
+.social .fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.social .fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.social .fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.social .fa-google-plus {
+    background: #dd4b39;
+    color: white;
+}
+
+.social .fa-youtube-play {
+    background: #dd4b39;
+    color: white;
+}
+
+.secondbottomnav-right {
+    float: right;
+    color: #000000;
+    text-align: left;
+    padding: 15px 12px;
+    text-decoration: none;
+    font-size: 17px;
+    width: 50%;
+}
+
+.secondbottomnav-right-left {
+    float: left;
+    color: #000000;
+    text-align: left;
+    padding: 15px 12px;
+    text-decoration: none;
+    font-size: 17px;
+    width: 30%;
+}
+
+.secondbottomnav-right-left a {
+    float: left;
+    color: #000000;
+    text-align: left;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.secondbottomnav-right-right {
+    float: left;
+    color: #000000;
+    text-align: left;
+    padding: 15px 12px;
+    text-decoration: none;
+    font-size: 17px;
+    width: 70%;
+}
+
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 72%;
+    background: #f1f1f1;
+}
+
+form.example button {
+    float: left;
+    width: 17%;
+    padding: 10px;
+    background: red;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+form.example button:hover {
+    background: #0b7dda;
+}
+
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
