@@ -1,0 +1,210 @@
+<head>
+    <title> Templet-9</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .topnav {
+            overflow: hidden;
+            background-color: #ffffff;
+        }
+        
+        .topnav a {
+            float: left;
+            color: #000000;
+            text-align: center;
+            padding: 20px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        
+        .topnav a:hover {
+            background-color: #e0e0e0;
+            color: black;
+        }
+        
+        .topnav a.active {
+            background-color: #ffffff;
+            color: white;
+        }
+        
+        .topnav-right {
+            float: right;
+        }
+        
+        .topnav-bottom {
+            float: bottom;
+        }
+        
+        input[type=text],
+        select,
+        textarea {
+            border: none;
+            border-bottom: 1px solid #ffffff;
+        }
+        
+        .upper ::placeholder {
+            font-size: 14px;
+            color: #ffffff;
+        }
+        
+        .lower ::placeholder {
+            font-size: 14px;
+            color: #a19e9e;
+        }
+        
+        input[type=text] {
+            border: none;
+            border-bottom: 1px solid #ffffff;
+        }
+        
+        .transparent-button {
+            cursor: pointer;
+            border: 0.5px solid #d4cece;
+            background-color: transparent;
+            color: #ffffff;
+            padding: 14px 28px;
+            font-size: 16px;
+            text-align: center;
+        }
+        
+        .button {
+            cursor: pointer;
+            border: none;
+            background-color: transparent;
+            color: #000000;
+            font-size: 15px;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        .column {
+            top: 0%;
+            float: left;
+            width: 25%;
+            position: relative;
+        }
+        
+        .row::after {
+            top: 0%;
+            content: "";
+            clear: both;
+            display: table;
+        }
+        
+        .column {
+            vertical-align: middle;
+        }
+        
+        .column .content {
+            position: absolute;
+            bottom: 0;
+            background: rgb(0, 0, 0);
+            background: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            height: 100%;
+            color: #f1f1f1;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body align="center">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <div class="topnav">
+        <a class="active" href="#home"><img src="logo1.jpg"></a>
+        <div class="topnav-right">
+            <a href="#demos">Demos</a>
+            <a href="#pages">Pages</a>
+            <a href="#shop">Shop</a>
+            <a href="#journal">Journal</a>
+            <a href="#contactus">Contact us</a>
+            <a href="#account"><i class="fa fa-user-o"></i></a>
+            <a href="#heart"><i class="fa fa-heart-o"></i></a>
+            <a href="#clipboard"><i class="fa fa-shopping-bag"></i></a>
+            <a href="#search"><i class="fa fa-search"></i></a>
+        </div>
+    </div>
+    <div class="upper" style="background-color:#ee0b4f;">
+        <br><br><br><br>
+        <h1 style="color:#ffffff; text-align:center;">Send us a message</h1>
+        <div class="container">
+            <form action="action_page.php" align="center">
+                <input type="text" size="63" id="name" name="name" placeholder="Your Name" style="background-color:#ee0b4f; color:#ffffff;"><br><br><br>
+                <input type="text" size="63" id="email" name="email" placeholder="Your Email Address" style="background-color:#ee0b4f; color:#ffffff"><br><br><br>
+                <input type="text" size="63" id="pno" name="phone" placeholder="Your Phone Number" style="background-color:#ee0b4f; color:#ffffff"><br><br><br>
+                <select id="enquary" name="enquary" style="background-color:#ee0b4f; width:478px; color:#ffffff">
+                <option>Type of Enquary</option>
+                <option value="return">Return</option>
+                <option value="replace">Replace</option>
+                <option value="price">Price</option>
+                <option value="product">Product</option>
+                </select><br><br><br>
+                <textarea cols="65" id="subject" name="subject" placeholder="How can we help you" style="height:150px; background-color:#ee0b4f; color:#ffffff;"></textarea><br><br><br>
+                <input type="submit" value="Submit Message" style="background-color:#ffffff; height:60px; width:200px;">
+                <br><br><br><br><br><br>
+            </form>
+        </div>
+    </div>
+    <div class="lower" style="color:#a19e9e; background-color:#ffffff;">
+        <div class="row">
+            <div class=" column ">
+                <img src="store_1.jpg " alt="store_1 " style="width:100% ">
+                <div class="content ">
+                    <br><br><br>
+                    <h1 style="color:#ffffff ">Matches<br>Fashion</h1>
+                    <h4 style="color:#ffffff ">demo@demostore.com<br>+44 20 7487 5400<br><br>87 Marylebone High St, Marylebon<br>London W1U 4QU, England</h4><br>
+                    <button class="transparent-button " href="# " style="height:60px; width:200px; ">View on Map</button><br><br>
+                </div>
+            </div>
+            <div class="column ">
+                <img src="store_2.jpg " alt="store_2 " style="width:100% ">
+                <div class="content ">
+                    <br><br><br>
+                    <h1 style="color:#ffffff ">Mercantile<br>London</h1>
+                    <h4 style="color:#ffffff ">demo@demostore.com<br>+44 20 7487 5400<br><br>87 Marylebone High St, Marylebon<br>London W1U 4QU, England</h4><br>
+                    <button class="transparent-button " href="# " style="height:60px; width:200px; ">View on Map</button><br><br>
+                </div>
+            </div>
+            <div class="column ">
+                <img src="images.jpg " alt="images " style="width:100% ">
+                <div class="content ">
+                    <br><br><br>
+                    <h1 style="color:#ffffff ">Iris Fashion</h1>
+                    <h4 style="color:#ffffff ">demo@demostore.com<br>+44 20 7487 5400<br><br>87 Marylebone High St, Marylebon<br>London W1U 4QU, England</h4><br>
+                    <button class="transparent-button " href="# " style="height:60px; width:200px; ">View on Map</button><br><br>
+                </div>
+            </div>
+            <div class="column ">
+                <img src="images (1).jpg " alt="images (1) " style="width:100% ">
+                <div class="content ">
+                    <br><br><br>
+                    <h1 style="color:#ffffff ">Goodhood</h1>
+                    <h4 style="color:#ffffff ">demo@demostore.com<br>+44 20 7487 5400<br><br>87 Marylebone High St, Marylebon<br>London W1U 4QU, England</h4><br>
+                    <button class="transparent-button " href="# " style="height:60px; width:200px; ">View on Map</button><br><br>
+                </div>
+            </div>
+        </div>
+
+        <div class="topnav-bottom " align="center ">
+            <br><br><br><br>
+            <img src="logo1.jpg "><br><br>
+            <h5 style="color:#a19e9e "> High-quality Woocommerce WordPress theam built with WPBakery Page<br> Builder and guaranteed on TheamForest.</h5><br><br>
+            <form class="example" action="/action_page.php">
+                <input type="text " size="63 " id="email " name="email " placeholder="Enter your email address... ">
+                <button type="submit">Submit</button>
+            </form><br><br>
+            <button class="button " href="#home ">Home </button>
+            <button class="button " href="#shop ">Shop </button>
+            <button class="button " href="#journal ">Journal </button>
+            <button class="button " href="#contactus ">Contact us </button> <br><br>
+            <br><br>
+            <h6 style="color:#a19e9e; ">@2019 REDDOT ALL RIGHTS RESERVED DESIGNED BY 9AMSTUDIO</h6>
+        </div>
+    </div>
+</body>
+<html>
