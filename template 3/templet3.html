@@ -1,0 +1,170 @@
+<html>
+
+<head>
+    <title>Templet3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="templet3.css">
+</head>
+
+<body bgcolor="#f1f1f1">
+    <div class="topnav">
+        <div class="topnav-left">
+            <a href="#location" style="color: red;"><i class="fa fa-map-marker" style="font-size:15px"></i> SAVE THE DATE! LATEST SEATS AVAILABLE</a>
+            <a id="Time" style="color: red;"></a>
+            <script>
+                var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
+                var x = setInterval(function() {
+                    var now = new Date().getTime();
+                    var distance = countDownDate - now;
+                    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                    document.getElementById("Time").innerHTML = days + "d : " + hours + " h : " +
+                        minutes + " m : " + seconds + " s ";
+                    if (distance < 0) {
+                        clearInterval(x);
+                        document.getElementById("Time").innerHTML = "EXPIRED";
+                    }
+                }, 1000);
+            </script>
+        </div>
+        <div class="topnav-right">
+            <a href="#contacts">CONTACTS</a>
+            <a href="#venues">VENUES</a>
+            <a href="#testimonials">TESTIMONIALS</a>
+            <a href="#youtube"><i class="fa fa-youtube-play"></i></a>
+            <a href="#twitter"><i class="fa fa-twitter"></i></a>
+            <a href="#instagram"><i class="fa fa-instagram"></i></a>
+            <a href="#facebook"><i class="fa fa-facebook"></i></a>
+        </div>
+    </div>
+    <div style="background-image: url(body_background.jpg); width: 100%; height: 758px; position: relative;">
+        <div class="secondtopnav">
+            <img src="evenz-logo.png">
+            <div class="secondtopnav-right">
+                <a href="#button" class="button"><i class="fa fa-shopping-cart"></i> Buy Now</a>
+                <a href="#menu" style="padding: 7.7px 9px;">
+                    <div class="menu-icon"></div>
+                    <div class="menu-icon"></div>
+                    <div class="menu-icon"></div>
+                </a>
+                <a href="#search" style="padding: 15.3px 15.3px;"><i class="fa fa-search"></i></a>
+                <a href="#reviews">REVIEWS</a>
+                <a href="#speakers">SPEAKERS</a>
+                <a href="#contacts">CONTACTS</a>
+                <a href="#blog">BLOG</a>
+                <a href="#venues">VENUES</a>
+                <a href="#events">EVENTS</a>
+                <a href="#news">NEWS</a>
+                <a href="#home">HOME</a>
+            </div>
+        </div>
+        <div class="inner-banner-image" align="right">
+            <div class="banner-content">
+                <table>
+                    <tr>
+                        <td colspan="2" style="color: #ffffff;">
+                            <h1>CONTACT US</h1>
+                            <hr size="8" width="100%" color="#ffffff"><br><br>
+                            <a class="chip">
+                                <i class="fa fa-calendar img" style="font-size:45px;"></i>
+                                <b>BOOKING:</b><br>+123 555 555<br>
+                            </a>
+                            <a class="chip">
+                                <i class="fa fa-institution img" style="font-size:45px;"></i>
+                                <b>SPEAKERS:</b><br>+123 555 555<br>
+                            </a>
+                            <a class="chip">
+                                <i class="fa fa-user img" style="font-size:45px;"></i>
+                                <b>EMAIL:</b><br>info@event.com<br>
+                            </a><br><br>
+                            <hr size="8" width="100%" color="#ffffff">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2"><label for="message">YOUR MESSAGE</label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" size="100" id="message" name="message"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="1"><label for="name">YOUR NAME(REQUIRED)</label></td>
+                        <td colspan="1"><label for="email">YOUR EMAIL(REQUIRED)</label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="1"><input type="text" size="45" id="name" name="name"></td>
+                        <td colspan="1"><input type="text" size="45" id="email" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="1"><label for="name">PHONE NUMBER(REQUIRED)</label></td>
+                        <td colspan="1"> </td>
+                    </tr>
+                    <tr>
+                        <td colspan="1"><input type="text" size="45" id="name" name="name"></td>
+                        <td colspan="1"><input type="submit" size="45" value="SEND MESSAGE" class="btn"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="map"></div>
+    <script>
+        function initMap() {
+            var test = {
+                lat: 18.9220,
+                lng: 72.8347
+            };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 4,
+                center: test
+            });
+            var marker = new google.maps.Marker({
+                position: test,
+                map: map
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2bXKNDezDf6YNVc-SauobynNHPo4RJb8&callback=initMap">
+    </script>
+    <div style="background-image: url(Nightsky.jpg); padding-left:10%; padding-top: 5%;">
+        <div style="background-image: url(city.jpg); width: 90%; height: 500px; position: sticky; border: 3px solid #ffffff ;">
+            <div align="center">
+                <br><br><br><br><br><br>
+                <hr align="center" size="5" width="25%" color="#ffffff">
+                <b align="center" style="font-size: xx-large; color: red;">NEWSLETTER</b>
+                <hr align="center" size="5" width="25%" color="#ffffff"><br><br>
+                <p style="color:#ffffff">Subscribe now and receive our weekly updates</p><br><br>
+                <form align="center" class="example" action="/action_page.php">
+                    <input type="text" placeholder="Your email address" name="email">
+                    <button type="submit">SIGN UP</button>
+                </form><br>
+            </div>
+        </div>
+        <br><br><br><br>
+        <div align="center">
+            <img src="logo.png">
+            <h1 style="color:#ffffff">YOUR EVENTS PARTNER</h1>
+            <hr size="5" width="5%" color="#ffffff"><br><br>
+            <a href="#twitter" style="padding-right: 2%; color: #ffffff;"><i class="fa fa-twitter"></i></a>
+            <a href="#instagram" style="padding-right: 2%; color: #ffffff;"><i class=" fa fa-linkedin "></i></a>
+            <a href="#facebook " style="color: #ffffff;"><i class="fa fa-facebook"></i></a><br><br><br><br><br><br>
+        </div>
+    </div>
+    <div class="bottomnav">
+        <div class="bottomnav-left">
+            <b style="color: #ffffff;"> COPYRIGHT 2019 </b><b style="color: red;">QANTUMTHEMES</b><b style="color: #ffffff;">. CUSTOMIZABLE TEXT.</b>
+        </div>
+        <div class="bottomnav-right">
+            <a href="#home">HOME</a>
+            <a href="#blog">BLOG</a>
+            <a href="#contacts">CONTACTS</a>
+            <a href="#events">EVENTS</a>
+            <a href="#testimonials">TESTIMONIALS</a>
+        </div>
+    </div>
+</body>
+
+</html>
